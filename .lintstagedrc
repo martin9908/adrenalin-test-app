@@ -1,0 +1,11 @@
+{
+    "*.{js,ts,tsx,json}":[
+        "yarn pretty",
+        "git add",
+    ],
+    "*.{js,ts,tsx}": [
+        "flow focus-check",
+        "yarn lint:js:fix",
+        "yarn run test --findRelatedTests",
+    ]
+}
